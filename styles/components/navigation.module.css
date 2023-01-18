@@ -1,8 +1,10 @@
 .nav {
   display: flex;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
-.nav .navItem a {
+.nav .navItem {
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
   text-decoration: none;
 }
