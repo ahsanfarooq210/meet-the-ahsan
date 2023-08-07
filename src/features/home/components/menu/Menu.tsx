@@ -35,11 +35,19 @@ const Menu = () => {
       <ul className="menu-list">
         {listItems.map((item, index) => {
           return (
-            <li key={index} className="menu-list-item">
-              <span className="menu-list-item-text">{item.text}</span>
-              <div className="menu-list-item-image">
-                <Image width={20} height={20} src={item.icon} alt="" style={{margin:0}} />
-              </div>
+            <li key={index} >
+              <a href=""  className="menu-list-item">
+                <span className="menu-list-item-text">{item.text}</span>
+                <div className="menu-list-item-image">
+                  <Image
+                    width={20}
+                    height={20}
+                    src={item.icon}
+                    alt=""
+                    style={{ margin: 0 }}
+                  />
+                </div>
+              </a>
             </li>
           );
         })}
