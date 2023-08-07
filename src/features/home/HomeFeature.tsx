@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomeFeature.css";
+import Menu from "./components/menu/Menu";
 
 const HomeFeature = () => {
   return (
@@ -22,7 +23,7 @@ const HomeFeature = () => {
         </div>
       </div>
       <div className="menu" >
-
+        <Menu/>
       </div>
     </div>
   );
