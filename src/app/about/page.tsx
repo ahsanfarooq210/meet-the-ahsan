@@ -3,19 +3,9 @@ import "./About.css";
 import Image from "next/image";
 import downloadSvg from "../../../public/DownloadSvg.svg";
 import AnimatedButton from "../../../components/animated-button/AnimatedButton";
+import { infoData, statsData } from "./meta";
 
-const infoData: { [key: string]: string } = {
-  "First Name": "Ahsan",
-  Address: "Pakistan, Punjab, Lahore",
-  "Last Name": "Farooq",
-  Phone: "+21621184010",
-  Age: "27 Years",
-  Email: "you@mail.com",
-  Nationality: "Tunisian",
-  Skype: "steve.milner",
-  Freelance: "Available",
-  Langages: "French, English",
-};
+
 
 const About = () => {
   return (
@@ -49,8 +39,16 @@ const About = () => {
                     />
                   </div>
                 </div>
-
-                <div className="stats"></div>
+                <div className="stats">
+                  {Object.entries(statsData).map(([key, value], index) => {
+                    return (
+                      <div key={index} className="stats-wrapper">
+                        <h1 className="stat-numbers">{key}</h1>
+                        <p className="stat-description">{value}</p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>

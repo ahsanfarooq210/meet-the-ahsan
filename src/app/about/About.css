@@ -71,6 +71,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .about-wrapper .info-wrapper {
@@ -93,51 +94,51 @@
   font-weight: bold;
 }
 
-.about-wrapper .cv-button {
-  position: relative;
-  display: flex; /* Display as inline-flex to avoid content being hidden */
-  align-items: center;
-  border: 2px #ffb400 solid;
-  background-color: transparent;
-  border-radius: 90px;
-  padding: 0px 0px 0px 20px;
-  overflow: hidden;
+.about-wrapper .stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
 }
 
-.about-wrapper .cv-button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 100%; /* Start the filling from the right side */
-  background-color: #ffb400;
-  transition: left 0.3s ease-in-out; /* Smooth transition effect for left property */
-}
-
-.about-wrapper .cv-button:hover::after {
-  left: 0; /* Fill the button when hovered */
-}
-
-/* Rest of the styles remain the same */
-.about-wrapper .cv-button .cv-button-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  z-index: 1;
-}
-.about-wrapper .cv-button .cv-button-content p{
-  font-weight: bold;
-}
-
-.about-wrapper .cv-button-content .paragraph {
+.about-wrapper .stats .stats-wrapper {
   color: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 350px;
+  width: 100%;
 }
 
-.about-wrapper .cv-button .image-container {
-  background-color: #ffb400;
-  border-radius: 50%;
-  padding: 20px;
+.about-wrapper .stat-numbers {
+  font-size: 50px;
+  color: #ffb400;
+  margin-bottom: 0;
+}
+
+.about-wrapper .stat-numbers::after {
+  content: "+";
+  color: #ffb400;
+  font-size: 40px;
+}
+
+.about-wrapper .stat-description {
+  padding-left: 45px;
+  position: relative;
+  max-width: 100px;
+  text-transform: uppercase;
+}
+
+.about-wrapper .stat-description::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  color: white;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 0px;
 }
