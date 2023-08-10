@@ -60,24 +60,84 @@
 .about-wrapper .personal-info-wrapper {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
 }
 
 .about-wrapper .personal-info-heading {
   color: white;
 }
 
-.about-wrapper .info-wrapper {
+.about-wrapper .info-stats-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
+}
+
+.about-wrapper .info-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-wrapper .info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
+  grid-column-gap: 10px;
   grid-row-gap: 0px;
+}
+
+.about-wrapper .info-paragraph {
+  color: white;
+}
+.about-wrapper .info-paragraph span {
+  font-weight: bold;
+}
+
+.about-wrapper .cv-button {
+  position: relative;
+  display: flex; /* Display as inline-flex to avoid content being hidden */
+  align-items: center;
+  border: 2px #ffb400 solid;
+  background-color: transparent;
+  border-radius: 90px;
+  padding: 0px 0px 0px 20px;
+  overflow: hidden;
+}
+
+.about-wrapper .cv-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%; /* Start the filling from the right side */
+  background-color: #ffb400;
+  transition: left 0.3s ease-in-out; /* Smooth transition effect for left property */
+}
+
+.about-wrapper .cv-button:hover::after {
+  left: 0; /* Fill the button when hovered */
+}
+
+/* Rest of the styles remain the same */
+.about-wrapper .cv-button .cv-button-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  z-index: 1;
+}
+.about-wrapper .cv-button .cv-button-content p{
+  font-weight: bold;
+}
+
+.about-wrapper .cv-button-content .paragraph {
+  color: white;
+}
+
+.about-wrapper .cv-button .image-container {
+  background-color: #ffb400;
+  border-radius: 50%;
+  padding: 20px;
 }

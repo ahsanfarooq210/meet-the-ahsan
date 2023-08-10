@@ -1,0 +1,48 @@
+.cv-button {
+  position: relative;
+  display: flex; /* Display as inline-flex to avoid content being hidden */
+  align-items: center;
+  border: 2px #ffb400 solid;
+  background-color: transparent;
+  border-radius: 90px;
+  padding: 0px 0px 0px 20px;
+  overflow: hidden;
+}
+
+.cv-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%; /* Start the filling from the right side */
+  background-color: #ffb400;
+  transition: left 0.3s ease-in-out; /* Smooth transition effect for left property */
+}
+
+.cv-button:hover::after {
+  left: 0; /* Fill the button when hovered */
+}
+
+/* Rest of the styles remain the same */
+.cv-button .cv-button-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  z-index: 1;
+}
+.cv-button .cv-button-content p {
+  font-weight: bold;
+}
+
+.cv-button-content .paragraph {
+  color: white;
+}
+
+.cv-button .image-container {
+  background-color: #ffb400;
+  border-radius: 50%;
+  padding: 20px;
+}

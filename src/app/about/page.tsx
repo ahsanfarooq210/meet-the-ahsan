@@ -1,10 +1,13 @@
 import React from "react";
 import "./About.css";
+import Image from "next/image";
+import downloadSvg from "../../../public/DownloadSvg.svg";
+import AnimatedButton from "../../../components/animated-button/AnimatedButton";
 
 const infoData: { [key: string]: string } = {
-  "First Name": "Muhammad Ahsan Farooq",
+  "First Name": "Ahsan",
   Address: "Pakistan, Punjab, Lahore",
-  "Last Name": "Milner",
+  "Last Name": "Farooq",
   Phone: "+21621184010",
   Age: "27 Years",
   Email: "you@mail.com",
@@ -28,9 +31,23 @@ const About = () => {
           <div className="about-coontent-content">
             <div className="personal-info-wrapper">
               <h1 className="personal-info-heading">PERSONAL INFOS</h1>
-              <div className="info-wrapper">
-                <div className="info">
-                  
+              <div className="info-stats-wrapper">
+                <div className="info-wrapper">
+                  <div className="info">
+                    {Object.entries(infoData).map(([key, value], index) => {
+                      return (
+                        <p className="info-paragraph" key={index}>
+                          {key} : <span>{value}</span>
+                        </p>
+                      );
+                    })}
+                  </div>
+                  <div className="cv-button-container">
+                    <AnimatedButton
+                      buttonText="Download CV"
+                      image={downloadSvg}
+                    />
+                  </div>
                 </div>
 
                 <div className="stats"></div>
