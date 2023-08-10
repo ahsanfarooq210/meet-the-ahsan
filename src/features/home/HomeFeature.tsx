@@ -16,8 +16,8 @@ const HomeFeature = () => {
             I am <span className="name">Muhammad Ahsan Farooq</span>
           </h1>
           <p className="description">
-            I'm a Freelance Web Designer & Developer based in Tunisia with 5+
-            years experience, I'm Highly experienced in designing & developing
+            I&apos;m a Freelance Web Designer & Developer based in Tunisia with 5+
+            years experience, I&apos;m Highly experienced in designing & developing
             custom web & mobile apps with multiple technologies.
           </p>
         </div>

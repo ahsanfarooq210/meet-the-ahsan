@@ -11,22 +11,27 @@ const listItems = [
   {
     text: "Home",
     icon: homeSvg,
+    href: "/",
   },
   {
     text: "About",
     icon: personSvg,
+    href: "/about",
   },
   {
     text: "Portfolio",
     icon: portfolioSvg,
+    href: "#",
   },
   {
     text: "Contact",
     icon: letterSvg,
+    href: "#",
   },
   {
     text: "Chat",
     icon: chat,
+    href: "#",
   },
 ];
 const Menu = () => {
@@ -35,8 +40,8 @@ const Menu = () => {
       <ul className="menu-list">
         {listItems.map((item, index) => {
           return (
-            <li key={index} >
-              <a href=""  className="menu-list-item">
+            <li key={index}>
+              <a href={item.href} className="menu-list-item">
                 <span className="menu-list-item-text">{item.text}</span>
                 <div className="menu-list-item-image">
                   <Image
