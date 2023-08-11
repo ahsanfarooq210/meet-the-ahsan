@@ -3,9 +3,16 @@ import "./About.css";
 import Image from "next/image";
 import downloadSvg from "../../../public/DownloadSvg.svg";
 import AnimatedButton from "../../../components/animated-button/AnimatedButton";
-import { infoData, skillsData, statsData } from "./meta";
+import {
+  educationData,
+  experienceData,
+  infoData,
+  skillsData,
+  statsData,
+} from "./meta";
 import CircleProgressBar from "../../../components/circle-progress-bar/CircleProgressBar";
 import experienecSvg from "../../../public/ExperienceSvg.svg";
+import Experience from "../../../components/experience/Experience";
 
 const About = () => {
   return (
@@ -70,31 +77,33 @@ const About = () => {
               </h1>
               <div className="education-experience-content">
                 <div className="experience-content">
-                  <div className="experience">
-                    <div style={{height:"100%"}} >
-                      <span className="icon">
-                        <Image
-                          src={experienecSvg}
-                          alt="Experience"
-                          className="experience-icon"
-                        />
-                      </span>
-                    </div>
-
-                    <div className="info">
-                      <p className="time-period">2018 - PRESENT</p>
-                      <p className="position">
-                        <span>UI/UX DESIGNER</span> - THEMEFOREST
-                      </p>
-                      <p className="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quis debitis at esse earum illo quia, quo vitae itaque
-                        ducimus asperiores.
-                      </p>
-                    </div>
-                  </div>
+                  {experienceData.map((item, index) => {
+                    return (
+                      <Experience
+                        key={index}
+                        company={item.Company}
+                        descripiton={item.desctiption}
+                        position={item.position}
+                        svgImage={experienecSvg}
+                        timePeriod={item.TimePeriod}
+                      />
+                    );
+                  })}
                 </div>
-                <div className="education-content"></div>
+                <div className="education-content">
+                  {educationData.map((item, index) => {
+                    return (
+                      <Experience
+                        key={index}
+                        company={item.institute}
+                        descripiton={item.description}
+                        position={item.degreeName}
+                        svgImage={experienecSvg}
+                        timePeriod={item.date}
+                      />
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>

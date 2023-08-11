@@ -263,3 +263,9 @@
   color: white;
   /* max-width: 500px; */
 }
+
+.about-wrapper .education-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
