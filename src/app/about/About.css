@@ -142,3 +142,124 @@
   top: 10px;
   left: 0px;
 }
+
+.about-wrapper .skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-wrapper .skills-heading {
+  color: white;
+  align-self: center;
+}
+
+.about-wrapper .skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 100px;
+  grid-row-gap: 50px;
+}
+
+.about-wrapper .skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-wrapper .skill > h3 {
+  color: white;
+}
+
+.about-wrapper .experience-education-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-wrapper .experience-education-heading {
+  color: white;
+  align-self: center;
+}
+
+.about-wrapper .education-experience-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-wrapper .experience-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-wrapper .experience {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+  height: 100%;
+  gap: 10px;
+}
+
+.about-content .experience .icon {
+  position: relative;
+  width: 20px;
+  display: table;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about-content .experience .icon .experience-icon {
+  position: relative;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffb400;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.about-content .experience .icon::after {
+  content: "";
+  display: table;
+  position: absolute;
+  top: 39px;
+  left: 17px;
+  width: 1px;
+  height: 100%;
+  background-color: #555555;
+}
+
+.about-wrapper .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.about-wrapper .time-period {
+  background-color: #555555;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: white;
+  margin: 0 0;
+}
+
+.about-wrapper .position {
+  color: white;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.about-wrapper .position span {
+  font-weight: bold;
+}
+
+
+.about-wrapper .description{
+  color: white;
+  /* max-width: 500px; */
+}

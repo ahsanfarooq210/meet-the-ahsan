@@ -3,9 +3,9 @@ import "./About.css";
 import Image from "next/image";
 import downloadSvg from "../../../public/DownloadSvg.svg";
 import AnimatedButton from "../../../components/animated-button/AnimatedButton";
-import { infoData, statsData } from "./meta";
-
-
+import { infoData, skillsData, statsData } from "./meta";
+import CircleProgressBar from "../../../components/circle-progress-bar/CircleProgressBar";
+import experienecSvg from "../../../public/ExperienceSvg.svg";
 
 const About = () => {
   return (
@@ -49,6 +49,52 @@ const About = () => {
                     );
                   })}
                 </div>
+              </div>
+            </div>
+            <div className="skills-wrapper">
+              <h1 className="skills-heading">SKILLS</h1>
+              <div className="skills">
+                {Object.entries(skillsData).map(([key, value], index) => {
+                  return (
+                    <div key={index} className="skill">
+                      <CircleProgressBar value={value} text={key} />
+                      <h3>{key}</h3>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="experience-education-wrapper">
+              <h1 className="experience-education-heading">
+                Experience & Education
+              </h1>
+              <div className="education-experience-content">
+                <div className="experience-content">
+                  <div className="experience">
+                    <div style={{height:"100%"}} >
+                      <span className="icon">
+                        <Image
+                          src={experienecSvg}
+                          alt="Experience"
+                          className="experience-icon"
+                        />
+                      </span>
+                    </div>
+
+                    <div className="info">
+                      <p className="time-period">2018 - PRESENT</p>
+                      <p className="position">
+                        <span>UI/UX DESIGNER</span> - THEMEFOREST
+                      </p>
+                      <p className="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quis debitis at esse earum illo quia, quo vitae itaque
+                        ducimus asperiores.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="education-content"></div>
               </div>
             </div>
           </div>

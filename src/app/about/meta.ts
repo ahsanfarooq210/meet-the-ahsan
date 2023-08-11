@@ -17,3 +17,19 @@ export const statsData: { [key: string]: string } = {
   "81": "happy customers",
   "53": "awards won",
 };
+
+export const skillsData:{[key:string]:number}={
+    'HTML':80,
+    'CSS':80,
+    'JavaScript':90,
+    'React':90,
+    'Typescript':95,
+    'Redux':90,
+    'Node.js':90,
+    'Express.js':90,
+    'MongoDB':90,
+    'Firebase':95,
+    'Git':100,
+    'Figma':70,
+    
+}
