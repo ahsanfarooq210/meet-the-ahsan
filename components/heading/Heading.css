@@ -1,0 +1,26 @@
+.main-heading {
+  font-size: 29px;
+  color: white;
+  position: relative;
+  padding: 20px 0;
+}
+.heading {
+  z-index: 999;
+  position: relative;
+}
+
+.heading-span {
+  color: #ffb400;
+}
+
+.header-background {
+  font-size: 100px;
+  color: gray;
+  text-transform: uppercase;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  opacity: 0.5;
+}

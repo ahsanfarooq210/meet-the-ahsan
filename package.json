@@ -12,12 +12,15 @@
     "@types/node": "20.4.7",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
+    "compass": "^0.1.1",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
     "next": "13.4.12",
     "normalize.css": "^8.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "saas": "^1.0.0",
+    "sass": "^1.65.1",
     "typescript": "5.1.6"
   }
 }

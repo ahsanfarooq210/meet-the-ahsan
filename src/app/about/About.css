@@ -233,12 +233,7 @@
   background-color: #555555;
 }
 
-.about-wrapper .info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 10px;
-}
+
 
 .about-wrapper .time-period {
   background-color: #555555;

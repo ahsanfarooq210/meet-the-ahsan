@@ -38,14 +38,14 @@
   background-color: #555555;
 }
 
-.info {
+.experience .info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 10px;
 }
 
-.time-period {
+.experience .time-period {
   background-color: #555555;
   border-radius: 10px;
   padding: 2px 10px;
@@ -53,17 +53,17 @@
   margin: 0 0;
 }
 
-.position {
+.experience .position {
   color: white;
   font-size: 25px;
   margin: 20px 0;
 }
 
-.about-wrapper .position span {
+.experience  .position span {
   font-weight: bold;
 }
 
-.about-wrapper .description {
+.experience .description {
   color: white;
   /* max-width: 500px; */
 }

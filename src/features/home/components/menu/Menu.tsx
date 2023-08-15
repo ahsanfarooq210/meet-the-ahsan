@@ -21,7 +21,7 @@ const listItems = [
   {
     text: "Portfolio",
     icon: portfolioSvg,
-    href: "#",
+    href: "/portfolio",
   },
   {
     text: "Contact",
