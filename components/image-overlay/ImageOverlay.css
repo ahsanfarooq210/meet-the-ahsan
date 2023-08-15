@@ -1,8 +1,7 @@
 .box {
-  margin: 5em auto;
   position: relative;
-  width: 10em;
-  height: 10em;
+  width: 27em;
+  height: 20em;
   line-height: 10em;
   overflow: hidden;
 }
@@ -56,7 +55,7 @@
 }
 
 .box__right {
-  background: blue;
+  background: #FF6600;
   transform: translateX(100%);
 }
 .box__right:before {
@@ -69,7 +68,7 @@
 }
 
 .box__left {
-  background: green;
+  background: #FF6600;
   transform: translateX(-100%);
 }
 .box__left:before {
@@ -81,7 +80,7 @@
 }
 
 .box__top {
-  background: red;
+  background: #FF6600;
   transform: translateY(-100%);
 }
 .box__top:before {
@@ -94,7 +93,7 @@
 }
 
 .box__bottom {
-  background: yellow;
+  background: #FF6600;
   transform: translateY(100%);
 }
 .box__bottom:before {
@@ -107,35 +106,6 @@
 }
 
 .box__center {
-  background: orange;
+  background: #FF6600;
   z-index: -1;
-}
-
-/* Some booring css*/
-html,
-body {
-  height: 100%;
-}
-
-body {
-  font-family: Helvetica, sans-serif;
-  transform: translateZ(0);
-}
-
-h1 {
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  font-size: 8pt;
-  color: gray;
-}
-
-a {
-  color: #FF6600;
-}
-
-a:hover {
-  color: darkorange;
 }

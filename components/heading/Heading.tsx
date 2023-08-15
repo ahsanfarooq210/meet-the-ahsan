@@ -1,14 +1,19 @@
 import React from "react";
 import './Heading.css'
 
+type HeadingPropTypes={
+  heading:string,
+  headingSpan:string,
+  backgroundText:string
+}
 
-const Heading = () => {
+const Heading = ({heading,headingSpan,backgroundText}:HeadingPropTypes) => {
   return (
     <div className="main-heading">
       <h1 className="heading">
-        ABOUT <span className="heading-span">ME</span>
+        {heading} <span className="heading-span">{headingSpan}</span>
       </h1>
-      <h1 className="header-background">Resume</h1>
+      <h1 className="header-background">{backgroundText}</h1>
     </div>
   );
 };

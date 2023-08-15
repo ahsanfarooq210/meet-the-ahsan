@@ -1,14 +1,19 @@
 import React from "react";
-import './ImageOverlay.css'
+import "./ImageOverlay.css";
 
-const ImageOverlay = () => {
+type ImageOverlayPropType = {
+  image: string;
+  text: string;
+};
+
+const ImageOverlay = ({ image, text }: ImageOverlayPropType) => {
   return (
     <div className="box">
-      <div className="box__right">Right → Left</div>
-      <div className="box__left">Left → Right</div>
-      <div className="box__top">Top → Bottom</div>
-      <div className="box__bottom">Bottom → Top</div>
-      <div className="box__center">Hover from any side</div>
+      <div className="box__right">{text}</div>
+      <div className="box__left">{text}</div>
+      <div className="box__top">{text}</div>
+      <div className="box__bottom">{text}</div>
+      <img className="box__center" src={image} alt="project" />
     </div>
   );
 };

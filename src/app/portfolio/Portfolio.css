@@ -1,0 +1,25 @@
+.portfolio-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.portfolio-wrapper .portfolio-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.project-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
