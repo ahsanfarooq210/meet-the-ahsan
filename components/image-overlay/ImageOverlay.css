@@ -13,6 +13,11 @@
   text-align: center;
   line-height: inherit;
   transition: transform .4s ease;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box__right:before, .box__left:before, .box__top:before, .box__bottom:before, .box__center:before {
   position: absolute;
@@ -47,6 +52,11 @@
 .box__right:hover, .box__left:hover, .box__top:hover, .box__bottom:hover, .box__center:hover {
   transform: translateX(0);
   z-index: 1;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box__right:hover:before, .box__left:hover:before, .box__top:hover:before, .box__bottom:hover:before, .box__center:hover:before {
   width: 100%;
@@ -55,7 +65,7 @@
 }
 
 .box__right {
-  background: #FF6600;
+  background: #ffb400;
   transform: translateX(100%);
 }
 .box__right:before {
@@ -68,7 +78,7 @@
 }
 
 .box__left {
-  background: #FF6600;
+  background: #ffb400;
   transform: translateX(-100%);
 }
 .box__left:before {
@@ -80,7 +90,7 @@
 }
 
 .box__top {
-  background: #FF6600;
+  background: #ffb400;
   transform: translateY(-100%);
 }
 .box__top:before {
@@ -93,7 +103,7 @@
 }
 
 .box__bottom {
-  background: #FF6600;
+  background: #ffb400;
   transform: translateY(100%);
 }
 .box__bottom:before {
@@ -106,6 +116,6 @@
 }
 
 .box__center {
-  background: #FF6600;
+  background: #ffb400;
   z-index: -1;
 }
