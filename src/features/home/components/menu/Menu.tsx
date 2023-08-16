@@ -26,7 +26,7 @@ const listItems = [
   {
     text: "Contact",
     icon: letterSvg,
-    href: "#",
+    href: "/contact",
   },
   {
     text: "Chat",
